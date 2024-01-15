@@ -1,2 +1,11 @@
-character_pattern: 1(girl|boy|other), \w+\s*(\beyes\b|\bhair\b), \w+\s*(\bbreasts\b|\bchest\b)
+character_pattern: 1(girl|boy|other)|2girls|3girls|4girls|5girls|6girls
+character_eyes: (aqua|gray|purple|pink|brown|orange|red|blonde|platinum blonde|silver|white|black|grey|blue|green)\s*(eyes)
+character_hair_colors: (aqua|gray|purple|pink|brown|orange|red|blonde|platinum blonde|silver|white|black|grey|blue|green)\s*(hair)
+character_hairs: \w+\s*\bponytail\b, \w+\s*\btwintails\b, \w+\s*\bbraid\b, \w+\s*\bbun\b
+character_features: (flat|small|medium|large) (breasts|chest)
+costume: 
+face: \w+\s*\bmouth\b, \w+\s*\beyebrows\b
+verbs: \blooking\b\s*\w+, \w+\s*\bhold\b, \w+\s*\bholdingd\b, \bhold\b\s*\w+, \bholdingd\b\s*\w+, \bhand on\b\s*\w+, \bhands on\b\s*\w+, \bhand in\b\s*\w+, \bhands in\b\s*\w+, on (stomach|side|bench|bed|couch|chair|floor), \bfinger to\b\s*\w+, \bhugging\b\s*\w+, \boutstretched\b\s*\w+
+wearings: \bmaid\b\s*\w+, \w+\s*\bswimsuit\b, \w+\s*\bbikini\b, \w+\s*\bdress\b, \w+\s*\bsleeves\b, \w+\s*\bshirt\b, \w+\s*\bskirt\b, \w+\s*\bunderware\b, \w+\s*\byukata\b, \w+\s*\bobi\b, \w+\s*\blegwear\b, \w+\s*\bribbon\b, \w+\s*\bbow\b, \w+\s*\bcap\b, \w+\s*\bhat\b, \w+\s*\bthighhighs\b
+angle: \bfrom\b\s*\w+
 quality_pattern: \b\w+\squality\b

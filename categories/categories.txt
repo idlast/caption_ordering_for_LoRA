@@ -1,9 +1,18 @@
 character_pattern:
-proper_nouns: c.c., code geass
-verbs:
+proper_nouns: #-キャラ名-#
+artwork: #-作品名-#
+costume: #-覚えさせたい衣装-#
+character_eyes: tareme, tsurime, sparkling eyes
+character_hair_colors:
+character_hairs: hair intakes, braid, twintails, ponytail, parted bang, ahoge, one side up, two side up, sidelocks, long hair, very long hair, short hair, bangs, hair between eyes
+character_features: breasts, child, aged down, fang, cleavage, collarbone, navel, midriff, ass, zettai ryouiki, soles, teeth
+face: smile, surprised, angry, jitome, sleepy, :3, :<, :t, :d, :o, blush, parted lips, closed eyes, ^_^, one eye closed, flustered, ><, ;o, tongue out, expressionless, heart-shaped pupils, crying, dot mouth, grin, drunk, ;d
+verbs: all fours, v, lying, sitting, standing on one leg, standing, leaning forward, wariza, seiza, paw pose, head tilt, crossed legs, tying hair, arms up, jumping, bent over
+angle:
+wearings: naked towel, maid, miko, bikini, swimsuit, kimono, japanese clothes, dress, ribbon, hair ribbon, bow, hair bow, nurce, nurce cap, straw hat, school uniform, scarf, skirt, shorts, underware, yukata, obi, crop top, off shoulder, bare shoulders, pantyhose, belt, open clothes, sweater, socks, hot pants, frills, cap, hat, necktie, thighhighs
 nouns:
-adjectives:
+adjectives: striped
 adverbs:
 others:
-quality_pattern: masterpiece
+quality_pattern: masterpiece, best quality, worst quality, low quality, normal quality
 cinematic:

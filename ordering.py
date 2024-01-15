@@ -5,13 +5,15 @@ import nltk
 from nltk import pos_tag
 from nltk.tokenize import sent_tokenize, word_tokenize
 
+# タグが「:」を含むような場合にエラーが起きるので修正した
 def load_categories(file_path):
     categories = {}
     category_order = {}
     with open(file_path, 'r') as file:
         for line in file:
-            key, values = line.strip().split(':')
-            values_list = values.split(',')
+            parts = line.strip().split(':')
+            key = parts[0]
+            values_list = ':'.join(parts[1:]).split(',')  # 2つ目以降のコロンを含む部分を結合
             categories[key] = values_list
             for i, value in enumerate(values_list):
                 category_order[value] = i
@@ -117,6 +119,9 @@ for tags_file_path in tags_files_paths:
     for category in ordered_categories:
          category_tags = sorted(classified_tags[category], key=lambda tag: category_order.get(tag, float('inf')))
          ordered_tags.extend(category_tags)
+
+    # やって損はないはず。半角スペースが増殖するのを抑制
+    ordered_tags = [tag.strip() for tag in ordered_tags]
 
     # 最終的なタグの文字列を生成
     formatted_tags = ', '.join(ordered_tags)
